@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+ --ral: 'Raleway', sans-serif;
+ --mont: 'Montserrat', sans-serif;
+}
+
+.container{
+    max-width: 1180px;
+    margin: auto;
+}
+
+
+/* GENERAL CSS START */
+
+#general{
+    background-image: url("../img/container.png");
+    padding-top: 170px;
+    padding-bottom: 170px;
+}
+
+#general .icons{
+    display: flex;
+}
+
+#general .icons p{
+    font: 500 24px var(--mont);
+line-height: 36px;
+color: #ffffff;
+margin-top: 25px;
+margin-bottom: 25px;
+}
+
+#general .icons a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+border-radius: 50px;
+color: #ffffff;
+background-color: #2c2828;
+position: relative;
+margin-left: 5px;
+}
+
+#general .icons div a:hover{
+    background-color: #2dcb71;
+}
+
+#general .icons a i{
+    font-size: x-large;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+#general .icons a:nth-child(5){
+    background-color: #2ecc71;
+}
+
+
+
+/* SECOND CSS START */
+
+#second{
+    background-color: #fff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#second .setting{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#second .setting a{
+    display: inline-block;
+    position: relative;
+    width: 90px;
+height: 90px;
+border-radius: 50px;
+background-color: #2ecc71;
+}
+
+#second .setting a i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: xx-large;
+}
+
+.setting h2{
+    font: 700 22px var(--ral);
+line-height: 18px;
+color: #222222;
+margin: 30px 30px;
+}
+
+.setting p{
+width: 358px;
+font-size: 16px;
+line-height: 26px;
+color: #848484;
+font-family: 'Raleway', sans-serif;
+}
+
+
+
+/* THIRD CSS START */
+
+#third{
+    background-color: #e3e3e3;
+    padding-top: 55px;
+    padding-bottom: 60px;
+}
+
+#third .function{
+    display: flex;
+    justify-content: space-between;
+}
+
+#third h2{
+    font: 600 22px var(--ral);
+line-height: 18px;
+color: #222222;
+}
+
+#third p{
+font-size: 16px;
+line-height: 26px;
+color: #848484;
+font-family: 'Raleway', sans-serif;
+margin: 25px 0 20px 0;
+}
+
+#third input{
+    font-size: 18px;
+line-height: 18px;
+color: #848484;
+font-family: 'Raleway', sans-serif;
+padding: 20px 100px 20px 20px;
+border: none;
+outline: none;
+background-color: #ffffff;
+border-radius: 15px 0 0 15px;
+}
+
+#third button{
+    font: bold 22px var(--ral);
+line-height: 18px;
+color: #ffffff;
+padding: 20px 35px;
+border: none;
+outline: none;
+background-color: #2dcb71;
+cursor: pointer;
+border-radius: 0 15px 15px 0;
+}
+
+#third .function form{
+    display: flex;
+}
+
+
+
+/* FOUR CSS START */
+
+#fourth{
+    background-color: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#fourth .jane{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#fourth .jane p{
+    font: 300 18px var(--ral);
+line-height: 30px;
+color: #848484;
+}
+
+#fourth .jane h3{
+    font: bold 18px var(--ral);
+line-height: 20px;
+color: #2e2e2e;
+margin: 8px 0 30px;
+}
+
+#fourth .jane h2{
+    font: 600 24px var(--ral);
+line-height: 24px;
+color: #000000;
+margin: 30px 10px;
+}
+
+#fourth div a{
+    display: inline-block;
+    position: relative;
+    width: 34px;
+height: 34px;
+border-radius: 17px;
+margin-top: 22px;
+background-color: #e3e3e3;
+}
+
+#fourth .href a i{
+    color: #ffffff;;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#fourth .href a:nth-child(3){
+    background-color: #2dcb71;
+}
+
+#fourth .href a:hover{
+    background-color: #2dcb71;
+}
+
+
+
+/* FOOTER CSS START */
+
+#footer{
+    background-color: #e3e3e3;
+    padding: 55px 60px;
+    padding-left: 420px;
+}
+
+
+#footer ul li{
+    display: inline;
+    font-size: 16px;
+line-height: 26px;
+color: #848484;
+font-family: "Helvetica Neue";
+margin-right: 35px;
+cursor: pointer;
+}
+
+
+
+@media only screen and (max-width:768px){
+    .container{
+        max-width: 300px;
+    }
+    
+    #general{
+        padding-top: 150px;
+        padding-bottom: 30px;
+    }
+
+    #general .icons{
+    flex-direction: column;
+    align-items: center;
+    }
+
+    #second .setting{
+       flex-direction: column;
+       text-align: center;
+    }
+
+     .setting p{
+      width: 310px;
+    }
+
+    #second .setting a{
+        margin-top: 25px;
+    }
+
+    #third .function{
+        flex-direction: column;
+    }
+
+    #third input{
+    padding: 10px;
+    }
+    
+    #third button{
+    padding: 20px 10px 20px 10px;
+    }
+
+    .function .video{
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    #fourth .jane{
+        flex-direction: column;
+    }
+
+    #footer{
+        padding-left: 10px;
+        padding-right: 0;
+        padding-top: 50px;
+    }
+
+}
